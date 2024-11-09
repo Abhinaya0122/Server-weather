@@ -31,7 +31,7 @@ app.get("/current-weather", async (req, res) => {
   const { lat, lng } = req.query;
   const url = `https://api.ambeedata.com/weather/latest/by-lat-lng?lat=${lat}&lng=${lng}`;
   const response = await fetch(url, {
-    headers: { "x-api-key": "916d7983e756c43cdbf9e84f1d32951c762cf9436ba71027ac66efbb8d1836d1" },
+    headers: { "x-api-key": "d829342a2c8c3199c592d9ace5a7ee138946d8f3a1d773545f7244d8e9995292" },
   });
   const data = await response.json();
   console.log(data);
@@ -43,7 +43,7 @@ app.get("/air-quality", async (req, res) => {
   const { lat, lng } = req.query;
   const url = `https://api.ambeedata.com/latest/by-lat-lng?lat=${lat}&lng=${lng}`;
   const response = await fetch(url, {
-    headers: { "x-api-key": "916d7983e756c43cdbf9e84f1d32951c762cf9436ba71027ac66efbb8d1836d1" },
+    headers: { "x-api-key": "d829342a2c8c3199c592d9ace5a7ee138946d8f3a1d773545f7244d8e9995292" },
   });
   const data = await response.json();
   console.log(data);
@@ -55,7 +55,7 @@ app.get("/disaster-detection", async (req, res) => {
   const { lat, lng } = req.query;
   const url = `https://api.ambeedata.com/disasters/latest/by-lat-lng?lat=${lat}&lng=${lng}`;
   const response = await fetch(url, {
-    headers: { "x-api-key": "916d7983e756c43cdbf9e84f1d32951c762cf9436ba71027ac66efbb8d1836d1" },
+    headers: { "x-api-key": "d829342a2c8c3199c592d9ace5a7ee138946d8f3a1d773545f7244d8e9995292" },
   });
   const data = await response.json();
   console.log(data);
